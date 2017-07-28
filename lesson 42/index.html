@@ -2,10 +2,20 @@
 
 <head>
     <title> insert Articles </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: gray;
+        }
+        
+        form {
+            margin-left: 200px;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="main.php" method="post">
+    <form action="main.php" method="post" class="form-group">
         <label for="title"> Header </label> </br>
         <textarea name="title" placeholder="insert header " maxlength="200 "></textarea> </br>
         <label for="article"> articl </label> </br>
