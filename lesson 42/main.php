@@ -18,7 +18,7 @@ if(isset($_POST['submit'])) {
 
     $insertNew = $DB->prepare("INSERT INTO ls42_contents(header, article) VALUES(:header, :article)");
     $insertNew->execute(array("header"=> $title, "article"=> $article));
-                echo "your article was added to database";
+                echo "<script type='text/javascript'>alert('your article was added to database');</script>";
                 printAll($DB);
 
 }
