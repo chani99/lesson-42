@@ -1,18 +1,18 @@
 <?php
 class user {
     public $id;
-    public $neme;
+    public $name;
     public $StartDate;
 
 
-    function __construct ($id, $neme, $StartDate) {
+    function __construct ($id, $name, $StartDate) {
         $this->id = $id;
-        $this->neme = $neme;
+        $this->name = $name;
         $this->StartDate = $StartDate;
         
     }
 
-    function userDetails() {
+    function userDet() {
         $userArr = array(
             "id"=>$this->id,
             "name"=>$this->name,

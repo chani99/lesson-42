@@ -9,6 +9,7 @@ $get;
 
 $buttonValue = ($_POST['submit']);
 $UserDetails = new User($_POST['Wid'], $_POST['Wmame'], $_POST['startDate'] );
+$UserDetails = $UserDetails->userDet();
 $DB = new connect();
 $DB->getDB();
 $DB = $DB->getDB();
