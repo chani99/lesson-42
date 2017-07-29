@@ -3,6 +3,8 @@ include ('button.php');
 include ('get.php');
 include ('user.php');
 include ('connect.php');
+include ('add.php');
+
 $get;
 
 $buttonValue = ($_POST['submit']);
@@ -17,6 +19,12 @@ $DB = $DB->getDB();
             $get->userDetals($DB);
             echo $get->idDetails;
             break;
+        case "add":
+            $get= new add($UserDetails, $DB);
+            if ($get ==true){
+            echo 'added';}
+            break;
+
         default:
         echo "error";
 

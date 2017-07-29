@@ -3,39 +3,49 @@
 
 <head>
     <title>mission-2</title>
-    <!--<script>
-        function sendAJAX(URL) {
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("redDiv").innerHTML = processData(JSON.parse(this.responseText));
-                    document.getElementById("redDiv").setAttribute("class", "redBackground");
-                }
-            };
-            xmlhttp.open("GET", URL);
-            xmlhttp.send();
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        #myform {
+            margin-left: 100px;
+            margin-top: 30px;
+            background-color: white;
+            padding: 50px;
         }
-
-    </script>-->
+        
+        body {
+            background-color: gainsboro;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="myform">
+        <form action="main.php" method="post" class="form-inline">
+            </br>
+            <input type=number name="Wid" placeholder="worker id" />
+            </br>
+            </br>
 
-    <form action="main.php" method="post">
-        <input type=number name="Wid" placeholder="worker id" />
-        </br>
-        <input type=text name="Wmame" placeholder="worker neme" />
-        </br>
-        <input type=date name="startDate" />
-        </br>
 
-        <button name="submit" value="get">get employee</button>
-        <button name="submit" value="add">add new</button>
-        <button name="submit" value="update">update</button>
-        <button name="submit" value="delete">delete</button>
-        <button name="submit" value="all">get all</button>
-    </form>
+            <button name="submit" value="get" class="btn-primary">get employee</button>
+            <button name="submit" value="delete" class="btn-primary">delete</button>
 
+            </br>
+
+            </br><input type=text name="Wmame" placeholder="worker neme" />
+            </br>
+
+            </br><input type=date name="startDate" /></br>
+            </br>
+
+            <button name="submit" value="add" class="btn-primary">add new</button>
+            <button name="submit" value="update" class="btn-primary">update</button>
+            </br>
+            </br>
+
+            <button name="submit" value="all" class="btn-primary">get all</button>
+        </form>
+    </div>
 </body>
 
 </html>

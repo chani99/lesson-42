@@ -12,8 +12,9 @@ class get  {
   
     function userDetals($DB){
                 $this->DB = $DB;
-                $DB_employee = $DB->prepare('SELECT * FROM proj_emplyee');
+                $DB_employee = $DB->prepare("SELECT * FROM proj_emplyee WHERE worker_id = 1");
                 $DB_employee->execute();
+                $row = $DB_employee;
 
                 while ($row = $DB_employee->fetch()) {
                     if($this->id == $row["worker_id"]){

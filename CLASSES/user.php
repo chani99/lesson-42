@@ -9,6 +9,14 @@ class user {
         $this->id = $id;
         $this->neme = $neme;
         $this->StartDate = $StartDate;
+        
+    }
 
+    function userDetails() {
+        $userArr = array(
+            "id"=>$this->id,
+            "name"=>$this->name,
+            "start-date"=>$this->StartDate);
+            return $userArr;
     }
 }
